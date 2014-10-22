@@ -1,4 +1,4 @@
-Txt-to-C-
+Txt to C Sharp
 =========
 
 <h1>Text to C Sharp</h1>
