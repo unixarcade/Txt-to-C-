@@ -1,7 +1,7 @@
 Txt to C Sharp
 =========
 
-<h1>Text to C Sharp</h1>
+
 
 This app is meant to be used to take text and make it into console text.
 It works for what I need it to
