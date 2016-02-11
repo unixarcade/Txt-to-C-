@@ -1,0 +1,23 @@
+Create comments for line
+do color planning 
+take patterns match and apply color
+
+("  ") ("  ")
+//
+loop
+char match  add to variable myvar + char = newmyvar
+//
+
+If (stream == newstream)
+{
+black
+Console.write
+} else {
+pattern other color
+}
+
+end line
+
+end line comment
+continue to next line
+
