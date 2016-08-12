@@ -29,9 +29,12 @@ namespace textfile
           inputfilename = textBox1.Text;
            outputfilename = textBox2.Text;
 
+            //open files
             System.IO.StreamReader file = new System.IO.StreamReader("c:\\test\\" + inputfilename + ".txt");
            System.IO.StreamWriter file2 = new System.IO.StreamWriter("c:\\test\\" + outputfilename + ".txt");
-            while((line = file.ReadLine()) !=null)
+            // start region
+            file2.WriteLine(" #region "+ inputfilename + " ");
+            while ((line = file.ReadLine()) !=null)
             {
                
                 Console.WriteLine(line);
@@ -39,7 +42,10 @@ namespace textfile
                 
                 counter++;
             }
+            // ending code region
+            file2.WriteLine("#endregion");
 
+            // close files
             file.Close();
             file2.Close();
             MessageBox.Show("Generation Completed");
