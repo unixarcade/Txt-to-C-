@@ -34,6 +34,7 @@ namespace textfile
            System.IO.StreamWriter file2 = new System.IO.StreamWriter("c:\\test\\" + outputfilename + ".txt");
             // start region
             file2.WriteLine(" #region "+ inputfilename + " ");
+            file2.WriteLine(" public static void " + inputfilename + "(){");
             while ((line = file.ReadLine()) !=null)
             {
                
@@ -43,6 +44,7 @@ namespace textfile
                 counter++;
             }
             // ending code region
+            file2.WriteLine("}");
             file2.WriteLine("#endregion");
 
             // close files
